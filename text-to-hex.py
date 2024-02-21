@@ -64,4 +64,4 @@ hexNumber = input("Now if you want to convert a NUMBER to hex, type the number(W
 clearScreen()
 
 #converts the str to int and then to hex
-print("O número convertido para hexadecimal é: ", hex(int(hexNumber)))
+print("The number typed in hexadecimal is: ", hex(int(hexNumber)))
