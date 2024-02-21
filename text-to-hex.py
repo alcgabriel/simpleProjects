@@ -1,4 +1,3 @@
-
 import os
 import time
 
@@ -16,27 +15,8 @@ def clearScreen():
 
 
 #used to get input from the user
-convertHex = input("Digite o texto que deseja converter para hexadecimal:") 
-clearScreen()
+convertHex = input("Type the text you want to convert to hexadecimal:") 
 
-print("O texto convertido para hexadecimal é: ", convertHex)
-time.sleep(3)
-clearScreen()
-
-print("O resultado é.")
-time.sleep(1)
-clearScreen()
-
-print("O resultado é..")
-time.sleep(1)
-clearScreen()
-
-print("O resultado é...")
-time.sleep(1)
-clearScreen()
-
-print("O resultado é....")
-time.sleep(1)
 clearScreen()
 
 
@@ -46,11 +26,42 @@ bytes = convertHex.encode()
 # now converts the byts to hexadecimal
 hexadecimal = bytes.hex()
 
+
+
+
+print("The text converted into hexadecimal is: ", convertHex)
+time.sleep(3)
+clearScreen()
+
+print("The result is.")
+time.sleep(1)
+clearScreen()
+
+print("The result is..")
+time.sleep(1)
+clearScreen()
+
+print("The result is...")
+time.sleep(1)
+clearScreen()
+
+print("The result is....")
+time.sleep(1)
+clearScreen()
+
+
+
 #print the output
-print("Resultado da conversão: ", hexadecimal)
+print("result of conversion:", hexadecimal)
 
 
+time.sleep(5)
+clearScreen()
+
+hexNumber = input("Now if you want to convert a NUMBER to hex, type the number(WHITOUT SPACES), if not, press <CTRL+C> to exit:")
 
 
+clearScreen()
 
-
+#converts the str to int and then to hex
+print("O número convertido para hexadecimal é: ", hex(int(hexNumber)))
